@@ -1,0 +1,13 @@
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\bin\Debug\net10.0\CleanArchitecture.Domain.deps.json
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\bin\Debug\net10.0\CleanArchitecture.Domain.dll
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\bin\Debug\net10.0\CleanArchitecture.Domain.pdb
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.csproj.AssemblyReference.cache
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.AssemblyInfo.cs
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.sourcelink.json
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.dll
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\refint\CleanArchitecture.Domain.dll
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\CleanArchitecture.Domain.pdb
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Domain\obj\Debug\net10.0\ref\CleanArchitecture.Domain.dll

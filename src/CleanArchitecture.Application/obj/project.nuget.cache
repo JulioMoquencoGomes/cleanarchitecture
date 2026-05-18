@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qvtolo/Ofi8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jcmg2\\.nuget\\packages\\vogen\\8.0.5\\vogen.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

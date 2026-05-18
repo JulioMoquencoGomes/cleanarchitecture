@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "CleanArchitecture.Domain/1.0.0": {
+        "dependencies": {
+          "Vogen": "8.0.5"
+        },
+        "runtime": {
+          "CleanArchitecture.Domain.dll": {}
+        }
+      },
+      "Vogen/8.0.5": {
+        "runtime": {
+          "lib/net9.0/Vogen.SharedTypes.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CleanArchitecture.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Vogen/8.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hUGafk0LpUn3ooZNOOczByhVSGqBaI96bCn0DkreSd2bwHGrMfdRoCqNrB4w0/y5bufyYaABqQ8wWBPgx5QdNw==",
+      "path": "vogen/8.0.5",
+      "hashPath": "vogen.8.0.5.nupkg.sha512"
+    }
+  }
+}

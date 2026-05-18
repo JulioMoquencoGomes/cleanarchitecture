@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EN6jLzNraNQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jcmg2\\.nuget\\packages\\vogen\\8.0.5\\vogen.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
