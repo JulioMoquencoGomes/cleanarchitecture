@@ -24,12 +24,14 @@ namespace CleanArchitecture.Infrastructure.Repositories
         public Book Add(Book entity)
         {
             _dbContext.Add(entity);
+            _dbContext.SaveChanges();
             return entity;
         }
 
         public Book Update(Book entity)
         {
             _dbContext.Update(entity);
+            _dbContext.SaveChanges();
             return entity;
         }
 
@@ -38,6 +40,7 @@ namespace CleanArchitecture.Infrastructure.Repositories
             var book = this.GetById(id);
             if(book != null) {
                 _dbContext.Remove(book);
+                _dbContext.SaveChanges();
                 return true;
             }
             return false;
