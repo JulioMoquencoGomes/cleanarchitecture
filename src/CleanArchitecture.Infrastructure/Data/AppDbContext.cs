@@ -1,18 +1,35 @@
+using Microsoft.EntityFrameworkCore;
 using CleanArchitecture.Domain.Entities;
+
 namespace CleanArchitecture.Infrastructure.Data;
 
-public class AppDbContext //: DbContext
+public class AppDbContext : DbContext
 {
-    // public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-    // {
-    // }
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
  
-    // public DbSet<Book> Books => Set<Book>();
+    public DbSet<Book> Books => Set<Book>();
  
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     base.OnModelCreating(modelBuilder);
- 
-    //     modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
-    // }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+    }
+
+    public override int SaveChanges()
+    {
+        foreach (var entry in ChangeTracker.Entries().Where(x => x.Entity.GetType().GetProperty("CreatedAt") != null))
+        {
+            if (entry.State == EntityState.Added)
+            {
+                entry.Property("CreatedAt").CurrentValue = DateTime.Now;
+            }
+            else if (entry.State == EntityState.Modified)
+            {
+                entry.Property("CreatedAt").IsModified = false;
+            }
+            entry.Property("UpdatedAt").CurrentValue = DateTime.Now;
+        }
+        
+        return base.SaveChanges();
+    }
 }
