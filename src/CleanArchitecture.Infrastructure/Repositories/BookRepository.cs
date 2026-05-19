@@ -18,7 +18,7 @@ namespace CleanArchitecture.Infrastructure.Repositories
         }
 
         public IEnumerable<Book> GetAll() => _dbContext.Books.ToList();
-        public Book? GetById(Guid id) =>  _dbContext.Books.FirstOrDefault(u => u.Id == id);
+        public Book? GetById(Guid id) => _dbContext.Books.FirstOrDefault(u => u.Id == id);
         
         public Book Add(Book entity)
         {
@@ -30,14 +30,17 @@ namespace CleanArchitecture.Infrastructure.Repositories
             _dbContext.Update(entity);
             return entity;
         }
-        public bool Delete(Book entity)
+        public bool Delete(Guid id)
         {
-            _dbContext.Remove(entity);
+            var book = this.GetById(id);
+            if(book != null) {
+                _dbContext.Remove(book);
+            }
             return true;
         }
-        public bool Remove(Book entity)
+        public bool Remove(Guid id)
         {
-            return this.Delete(entity);
+            return this.Delete(id);
         }
     }
 }

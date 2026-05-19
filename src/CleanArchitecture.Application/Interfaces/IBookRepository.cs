@@ -11,7 +11,7 @@ namespace CleanArchitecture.Application.Interfaces
         Book Add(Book entity);
         Book Update(Book entity);
 
-        bool Delete(Book entity);
-        bool Remove(Book entity);
+        bool Delete(Guid id);
+        bool Remove(Guid id);
     }
 }

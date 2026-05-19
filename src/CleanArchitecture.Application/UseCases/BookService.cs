@@ -15,6 +15,10 @@ namespace CleanArchitecture.Application.UseCases
 
         public IEnumerable<Book> GetBooks() => _bookRepository.GetAll();
 
-        public Book GetBook(Guid id) => _bookRepository.GetById(id);
+        public Book? GetBook(Guid id) => _bookRepository.GetById(id);
+        public Book Add(Book book) => _bookRepository.Add(book);
+        public Book Update(Book book) => _bookRepository.Update(book);
+        public bool Delete(Guid id) => _bookRepository.Delete(id);
+        public bool Remove(Guid id) => _bookRepository.Remove(id);
     }
 }
