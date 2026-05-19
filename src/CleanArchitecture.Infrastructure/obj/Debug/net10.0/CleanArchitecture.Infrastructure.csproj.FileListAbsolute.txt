@@ -16,3 +16,5 @@ C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infras
 C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infrastructure\obj\Debug\net10.0\refint\CleanArchitecture.Infrastructure.dll
 C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infrastructure\obj\Debug\net10.0\CleanArchitecture.Infrastructure.pdb
 C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infrastructure\obj\Debug\net10.0\ref\CleanArchitecture.Infrastructure.dll
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infrastructure\bin\Debug\net10.0\CleanArchitecture.Infrastructure.runtimeconfig.json
+C:\Users\jcmg2\Documents\Projetos\cleanarchitecture\src\CleanArchitecture.Infrastructure\obj\Debug\net10.0\CleanArchitecture.Infrastructure.genruntimeconfig.cache
