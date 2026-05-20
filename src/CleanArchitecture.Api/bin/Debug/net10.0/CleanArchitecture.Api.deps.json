@@ -9,6 +9,7 @@
       "CleanArchitecture.Api/1.0.0": {
         "dependencies": {
           "CleanArchitecture.Application": "1.0.0",
+          "CleanArchitecture.Domain": "1.0.0",
           "CleanArchitecture.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.8",
           "Microsoft.EntityFrameworkCore.Design": "10.0.8",

@@ -1,10 +1,6 @@
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Domain.Entities;
 using CleanArchitecture.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Principal;
 
 namespace CleanArchitecture.Infrastructure.Repositories
 {

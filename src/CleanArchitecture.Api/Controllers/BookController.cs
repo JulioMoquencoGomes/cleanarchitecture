@@ -17,15 +17,42 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Book> Get() => _bookService.GetBooks();
+        public JsonResult Get() => new JsonResult(new { success = true, book = _bookService.GetBooks()});
 
         [HttpGet("{id}")]
-        public ActionResult<Book> Get(Guid id)
+        public JsonResult Get(Guid id)
         {
             var book = _bookService.GetBook(id);
             if (book == null)
-                return NotFound();
-            return book;
+            {
+                return new JsonResult(new { success = false, message = "Not found"});
+            }
+            return new JsonResult(new { success = true, book = book});
+        }
+
+        [HttpPost]
+        public JsonResult Post(Book book)
+        {
+            book = _bookService.Add(book);
+            return new JsonResult(new { success = true, book = book});
+        }
+
+        [HttpPut("{id}")]
+        public JsonResult Put(Guid id, Book book)
+        {
+            if (id != book.Id)
+            {
+                return new JsonResult(new { success = false, message = "Not updated"});
+            }
+            book = _bookService.Update(book);
+            return new JsonResult(new { success = true, book = book});
+        }
+
+        [HttpDelete("{id}")]
+        public JsonResult Delete(Guid id)
+        {
+            _bookService.Delete(id);
+            return new JsonResult(new { success = true, message = "Deleted with successful"});
         }
     }
 }
