@@ -1,35 +1,36 @@
 using Microsoft.EntityFrameworkCore;
 using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitecture.Infrastructure.Data;
-
-public class AppDbContext : DbContext
+namespace CleanArchitecture.Infrastructure.Data
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
- 
-    public DbSet<Book> Books => Set<Book>();
- 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    public class AppDbContext : DbContext
     {
-        base.OnModelCreating(modelBuilder);
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
-    }
-
-    public override int SaveChanges()
-    {
-        foreach (var entry in ChangeTracker.Entries().Where(x => x.Entity.GetType().GetProperty("CreatedAt") != null))
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
+    
+        public DbSet<Book> Books => Set<Book>();
+    
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            if (entry.State == EntityState.Added)
-            {
-                entry.Property("CreatedAt").CurrentValue = DateTime.Now;
-            }
-            else if (entry.State == EntityState.Modified)
-            {
-                entry.Property("CreatedAt").IsModified = false;
-            }
-            entry.Property("UpdatedAt").CurrentValue = DateTime.Now;
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
-        
-        return base.SaveChanges();
+
+        public override int SaveChanges()
+        {
+            foreach (var entry in ChangeTracker.Entries().Where(x => x.Entity.GetType().GetProperty("CreatedAt") != null))
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Property("CreatedAt").CurrentValue = DateTime.Now.ToUniversalTime();
+                }
+                else if (entry.State == EntityState.Modified)
+                {
+                    entry.Property("CreatedAt").IsModified = false;
+                }
+                entry.Property("UpdatedAt").CurrentValue = DateTime.Now.ToUniversalTime();
+            }
+            
+            return base.SaveChanges();
+        }
     }
 }
