@@ -28,6 +28,16 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<BookService>();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Front", policy =>
+    {
+        policy.WithOrigins("https://localhost:8080", "http://localhost:8080") // Origens permitidas
+              .AllowAnyHeader()                                                // Headers como Authorization
+              .AllowAnyMethod();                                               // Métodos como GET, POST, PUT
+    });
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -43,6 +53,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.MapScalarApiReference();
 
+app.UseCors("Front");
+//app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
