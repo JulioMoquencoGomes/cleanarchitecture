@@ -2810,32 +2810,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jcmg2\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/juliomoquenco/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
+      "projectUniqueName": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Api/CleanArchitecture.Api.csproj",
       "projectName": "CleanArchitecture.Api",
-      "projectPath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
-      "packagesPath": "C:\\Users\\jcmg2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Api\\obj\\",
+      "projectPath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Api/CleanArchitecture.Api.csproj",
+      "packagesPath": "/home/juliomoquenco/.nuget/packages/",
+      "outputPath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Api/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jcmg2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/juliomoquenco/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2843,14 +2835,14 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
-              "projectPath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
+            "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+              "projectPath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
             },
-            "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
-              "projectPath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj"
+            "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+              "projectPath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
             },
-            "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj"
+            "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj": {
+              "projectPath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj"
             }
           }
         }
@@ -2924,7 +2916,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/juliomoquenco/.dotnet/sdk/10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

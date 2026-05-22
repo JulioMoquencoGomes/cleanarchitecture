@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CleanArchitecture.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260519015805_TableBook")]
+    [Migration("20260522151903_TableBook")]
     partial class TableBook
     {
         /// <inheritdoc />
@@ -47,6 +47,10 @@ namespace CleanArchitecture.Api.Migrations
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Urlimg")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 

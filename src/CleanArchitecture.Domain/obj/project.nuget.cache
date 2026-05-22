@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eNFyTaKcvD0=",
+  "dgSpecHash": "d4cSHCGzujw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jcmg2\\Documents\\Projetos\\cleanarchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+  "projectFilePath": "/home/juliomoquenco/Projects/cleanarchitecture/src/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jcmg2\\.nuget\\packages\\vogen\\8.0.5\\vogen.8.0.5.nupkg.sha512"
+    "/home/juliomoquenco/.nuget/packages/vogen/8.0.5/vogen.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }
