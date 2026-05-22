@@ -63,6 +63,7 @@ class BookEditPage extends React.Component {
 
         try {
             if(this.state.id){
+                data.id = this.state.id;
                 await booksService.edit(data, this.state.id);
                 alert("Livro editado com sucesso!");
             }
