@@ -28,7 +28,6 @@ class BookListPage extends React.Component {
     async loadBooks() {
         try {
             let res = await booksService.list();
-            console.log(res.data.book);
             this.setState({ books: res.data.book })
         } catch (error) {
             console.log(error);

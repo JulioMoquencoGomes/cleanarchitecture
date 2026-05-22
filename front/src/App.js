@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from './pages/home/home.page';
-import LoginPage from './pages/login/login.page';
 import BookListPage from './pages/book-list/book-list.page';
 import BookDetailPage from './pages/book-detail/book-detail.page';
 import BookEditPage from './pages/book-edit/book-edit.page';
@@ -14,7 +13,7 @@ class App extends React.Component {
         <BrowserRouter>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <span>&nbsp;</span>
-            <a className="navbar-brand" href="/">CleanArchitectureApp</a>
+            <a className="navbar-brand" href="/">CleanArcApp</a>
             <button className="navbar-toggler" 
               type="button" 
               data-toggle="collapse" 
@@ -25,7 +24,7 @@ class App extends React.Component {
             <div className="collapse navbar-collapse" id="navbarMenu">
               <div className="navbar-nav">
                 <a href="/" className="nav-item nav-link">Home</a>
-                <a href="/book-list" className="nav-item nav-link">Livro</a>
+                <a href="/book-list" className="nav-item nav-link">Livros</a>
               </div>
             </div>
           </nav>

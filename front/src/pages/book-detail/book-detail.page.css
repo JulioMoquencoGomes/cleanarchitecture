@@ -1,5 +1,5 @@
-book_description.book-img{
-    width: 100%;
+.book-img{
+    max-width: 400px;
 }
 
 .book-info{
