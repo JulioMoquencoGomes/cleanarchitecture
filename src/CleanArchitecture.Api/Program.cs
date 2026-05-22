@@ -23,7 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
-// Dependency Injection
+
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<BookService>();
 
@@ -32,9 +32,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("Front", policy =>
     {
-        policy.WithOrigins("https://localhost:8080", "http://localhost:8080") // Origens permitidas
-              .AllowAnyHeader()                                                // Headers como Authorization
-              .AllowAnyMethod();                                               // Métodos como GET, POST, PUT
+        policy.WithOrigins("https://localhost:3001", "http://localhost:3001")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
@@ -55,6 +55,14 @@ app.MapScalarApiReference();
 
 app.UseCors("Front");
 //app.UseAuthorization();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
+
 app.MapControllers();
 
 app.Run();

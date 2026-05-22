@@ -13,4 +13,6 @@ RUN dotnet publish "CleanArchitecture.Api/CleanArchitecture.Api.csproj" -c Relea
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "CleanArchitecture.Api.dll"]
